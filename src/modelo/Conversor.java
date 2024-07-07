@@ -30,7 +30,12 @@ public class Conversor {
       public void iu(double a) {
          this.a=a;
     }
-
+ public void xxa(double a) {
+         this.a=a;
+    }
+ public void xxaaaa(double a) {
+         this.a=a;
+    }
     @Override
     public String toString() {
         return " " + this.valor;
