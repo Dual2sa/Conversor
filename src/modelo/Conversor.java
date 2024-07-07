@@ -8,14 +8,12 @@ import vista.Formulario;
  */
 public class Conversor {
 
-    private double valor,prom;
+    private double valor, prom,a;
     public double dolarL = 3586, dolarM = 3600, dolarMi = 3666, dolarJ = 3600, dolarV = 3589;//Valores respecto a semana correspondinte Abril 05-Abril 09
-    
-  
 
     public Conversor() {
         valor = 0;
-        
+
     }
 
     public Conversor(double valor) {
@@ -28,6 +26,9 @@ public class Conversor {
 
     public void setValor(double valor) {
         this.valor = valor;
+    }
+      public void iu(double a) {
+         this.a=a;
     }
 
     @Override
@@ -81,7 +82,7 @@ public class Conversor {
     }
 
     public double promedioSemanas() {
-        
+
         prom = (dolarL + dolarM + dolarMi + dolarJ + dolarV) / 5;
         return prom;
     }
@@ -145,5 +146,8 @@ public class Conversor {
         }
         return valor;
     }
+
+  
+     
 
 }
